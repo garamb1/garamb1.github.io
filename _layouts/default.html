@@ -29,21 +29,32 @@
     {% feed_meta %}
 
     <meta content="{{ site.title }}" property="og:site_name">
+    
+    {% if page.url %}
+      <meta content="{{ site.url }}{{ page.url }}" property="og:url">
+      <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+    {% endif %}
 
     {% if page.teaser %}
       <meta content="{{ page.teaser }}" property="og:description">
       <meta content="article" property="og:type">
       <meta content="{{ page.title }} | {{ site.title }}" property="og:title">
+      <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
+      <meta name="twitter:description" content="{{ page.teaser }}">
     {% else %}
       <meta content="{{ site.description }}" property="og:description">
       <meta content="website" property="og:type">
       <meta content="{{ site.title }}" property="og:title">
+      <meta name="twitter:title" content="{{ site.title }}">
+      <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
 
     {% if page.image %}
-      <meta content="{{ site.baseurl }}{{ page.image }}" property="og:image">
+      <meta content="{{ page.image }}" property="og:image">
+      <meta name="twitter:image:src" content="{{ site.url }}{{ page.image }}">
     {% else %}
-      <meta content="{{ site.baseurl }}/i/avatar.png" property="og:image">
+      <meta content="/i/avatar.png" property="og:image">
+      <meta name="twitter:image:src" content="/i/avatar.png">
     {% endif %}
 
     {% if page.category %}
