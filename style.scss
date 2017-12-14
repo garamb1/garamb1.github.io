@@ -113,8 +113,6 @@
     font-size: 1.5rem;
     font-weight: 700;
     text-transform: lowercase;
-
-    a:active { color: #fff; }
   }
 }
 
@@ -707,6 +705,11 @@
 .img-responsive {
     width: 100%;
     height: auto;
+}
+
+/* Mobile nameplate active style*/
+.nameplate:active > h1, .nameplate:active > .nameplate__subhead{
+    color: #fff;
 }
 
 /* Mobile link default ontap highligh removal */
