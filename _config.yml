@@ -1,0 +1,90 @@
+#######################
+# Theme Customization #
+#######################
+
+title: '@garambo'                              # used in <title> tag & site header
+author: Vincenzo Garambone                  # used in a <meta> tag & /feed.xml
+description: >                              # used in a <meta> tag & /feed.xml
+  Vincenzo Garambone's personal page & blog.
+  Thoughts and ideas about programming and random stuff (Mostly in Italian).
+slogan: \> Hello!                   # used in site header, beside title
+avatar: /i/avatar.png                       # used as portrait in site header
+banner: /i/background.svg                   # used as background in site header
+url:                                        # used by plugins to generate feed.xml and sitemap.xml
+baseurl: ''                                 # prepended to all absolute filepaths
+repo: https://github.com/garamb1/garamb1.github.io # used in footer
+highlighter: rouge
+
+# Objects listed here will appear in the main nav menu.
+# Exceeding four items may cause problems on the desktop (>900px wide) layout.
+nav_menu:
+  - name: Posts
+    url: /
+    icon: /i/icons/book.svg # icons should be 24x24 px.
+  - name: Projects
+    url: /projects
+    icon: /i/icons/rocket.svg
+  - name: GitHub
+    url: https://github.com/garamb1/
+    icon: /i/icons/github.svg
+    outbound: true      # this key sets a link to open in a new window.
+  - name: Twitter
+    url: https://twitter.com/garambo/
+    icon: /i/icons/twitter-square.svg
+    outbound: true      # this key sets a link to open in a new window.
+
+# Objects listed here will appear on the /projects.html page.
+projects:
+
+  - title: Casalbruciato Runner
+    teaser: An infinite runner set in Rome's neighborhood of CasalBruciato. Available on Google Play.
+    url: https://play.google.com/store/apps/details?id=it.garambo.Casalbruciato
+    role: Developer
+    category: Game Development
+  - title: Discover Grassano
+    teaser: The official Tourist Portal of Grassano (Matera, Italy)
+    url: http://www.discovergrassano.it/
+    role: Developer
+    category: Web Development
+  - title: StartSaver
+    teaser: With StartSaver you can lock the screen or start your screensaver when you are getting away from your Mac.
+    url: https://github.com/garamb1/StartSaver/releases
+    role: Developer
+    category: macOS App
+
+#################
+# Site Settings #
+#################
+
+incremental: true
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - TODO.md
+
+permalink: /:collection/:path
+
+collections:
+  category: { output: true }
+  tag:      { output: true }
+
+defaults:
+  - scope:  { type:   posts    }
+    values: { layout: post     }
+  - scope:  { type:   tag      }
+    values: { layout: listing  }
+  - scope:  { type:   category }
+    values: { layout: listing  }
+
+sass:
+  style: compressed
+  sass_dir: _assets/css
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+paginate: 10
