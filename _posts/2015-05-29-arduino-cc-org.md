@@ -2,7 +2,8 @@
 title: "L'affaire Arduino: cc vs org"
 teaser: "Gravi tumulti hanno sconvolto la galassia: ci sono due Arduino e, che vinca l'uno o che vinca l'altro, la comunità Open Source è l'unica vittima dello scisma."
 category: tech
-tags: [italian, arduino]
+tags: [italian, arduino, italian]
+image: /post-imgs/2015-05-29-arduino-cc-org/team-arduino.jpg
 ---
 
 ![Il team Arduino](/post-imgs/2015-05-29-arduino-cc-org/team-arduino.jpg){:class="img-responsive"}

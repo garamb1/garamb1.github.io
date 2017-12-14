@@ -2,7 +2,8 @@
 title: "Swift, La mia personale scoperta del linguaggio. (Vol. 1)"
 teaser: "Un approccio pragmatico a Swift. Volume 1: Intro al linguaggio, come andrà a finire?"
 category: programming
-tags: [swift, programming, apple, objective-c]
+tags: [swift, programming, apple, objective-c, italian]
+image: /post-imgs/2015-05-24-swift-intro-vars/swift.png
 ---
 
 ![Swift Logo](/post-imgs/2015-05-24-swift-intro-vars/swift.png){:class="img-responsive"}

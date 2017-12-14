@@ -1,9 +1,9 @@
 ---
 title: "Festivalmente, il Festival delle Idee a Grassano"
-keywords: "festivalmente, grassano, matera, innovazione, conferenze"
 teaser: "Il 27, 29 e 30 Dicembre 2015, a Grassano si terrà il primo festival dedicato alle idee innovative"
 category: events
 tags: [italian]
+image: /post-imgs/2015-12-27-festivalmente/logo-festivalmente.png
 ---
 
 ![Logo Festivalmente](/post-imgs/2015-12-27-festivalmente/logo-festivalmente.png){:class="img-responsive"}

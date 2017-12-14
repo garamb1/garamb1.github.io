@@ -1,3 +1,3 @@
 ---
-title: 🏷 Italian Posts
+title: 🏷 Italian
 ---
