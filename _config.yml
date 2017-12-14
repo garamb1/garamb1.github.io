@@ -7,7 +7,7 @@ author: Vincenzo Garambone                  # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Vincenzo Garambone's personal page & blog.
   Thoughts and ideas about programming and random stuff (Mostly in Italian).
-slogan: \> Hello!                   # used in site header, beside title
+slogan: \> Hello.                           # used in site header, beside title
 avatar: /i/avatar.png                       # used as portrait in site header
 banner: /i/background.svg                   # used as background in site header
 url:                                        # used by plugins to generate feed.xml and sitemap.xml

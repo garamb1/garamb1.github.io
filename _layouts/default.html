@@ -22,14 +22,18 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>{{ title }} | {{ site.title }}</title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="author"       content="{{ site.author }}" />
     <meta name="description"  content="{{ teaser }}" />
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
     {% feed_meta %}
 
     <meta content="{{ site.title }}" property="og:site_name">
-    
+    <meta content="{{ page.title }} | {{ site.title }}" property="og:title">
+    <meta content="{{ site.title }}" property="og:title">
+    <meta name="twitter:title" content="{{ site.title }}">
+
+
     {% if page.url %}
       <meta content="{{ site.url }}{{ page.url }}" property="og:url">
       <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
@@ -38,14 +42,10 @@
     {% if page.teaser %}
       <meta content="{{ page.teaser }}" property="og:description">
       <meta content="article" property="og:type">
-      <meta content="{{ page.title }} | {{ site.title }}" property="og:title">
-      <meta name="twitter:title" content="{{ page.title }} | {{ site.title }}">
       <meta name="twitter:description" content="{{ page.teaser }}">
     {% else %}
       <meta content="{{ site.description }}" property="og:description">
       <meta content="website" property="og:type">
-      <meta content="{{ site.title }}" property="og:title">
-      <meta name="twitter:title" content="{{ site.title }}">
       <meta name="twitter:description" content="{{ site.description }}">
     {% endif %}
 
