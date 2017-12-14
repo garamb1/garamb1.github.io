@@ -5,7 +5,7 @@ category: tech
 tags: [italian, arduino]
 ---
 
-![Il team Arduino](/post-imgs/2015-05-29-arduino-cc-org/team-arduino.jpg)
+![Il team Arduino](/post-imgs/2015-05-29-arduino-cc-org/team-arduino.jpg){:class="img-responsive"}
 
 <sub>Da sinistra verso destra: David Cuartielles, Gianluca Martino, Tom Igoe, David Mellis, Massimo Banzi. 
 Stando a quanto si dice, uno di loro pugnala alle spalle gli altri. 
@@ -50,7 +50,7 @@ Seguendo le meccaniche del business attorno ad i progetti Open Source (vedi le v
 Con il marchio registrato, nasce effettivamente un brand per il quale sarà necessario che qualcuno si occupi della produzione: Gianluca Martino ha nei pressi di Ivrea un'azienda, tale Smart Projects SRL.
 
 
-![Confezione Arduino.org](/post-imgs/2015-05-29-arduino-cc-org/arduino-box.jpg)
+![Confezione Arduino.org](/post-imgs/2015-05-29-arduino-cc-org/arduino-box.jpg){:class="img-responsive"}
 
 <sub>La confezione del mio Arduino Uno con relativo "foglietto illustrativo" dove si può vedere "Manufactured under license from Arduino by SMART PROJECTS SRL"</sub>
 

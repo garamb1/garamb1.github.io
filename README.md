@@ -19,7 +19,4 @@ jekyll serve
 ```
 
 ## Additional resources
-
-* FontAwesome icons taken from [font-awesome-svg](https://github.com/ivanvotti/font-awesome-svg), is distributed under the MIT license.
-* The original Font Awesome icon font created by Dave Gandy can be found at http://fontawesome.io
 * Background pattern by [Steve Schoger](http://www.heropatterns.com/), distributed under the CC BY 4.0 License.

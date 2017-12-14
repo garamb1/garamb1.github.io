@@ -6,7 +6,7 @@ category: events
 tags: [italian]
 ---
 
-![Logo Festivalmente](/post-imgs/2015-12-27-festivalmente/logo-festivalmente.png)
+![Logo Festivalmente](/post-imgs/2015-12-27-festivalmente/logo-festivalmente.png){:class="img-responsive"}
 
 
 Nel corso delle giornate del 27, 29 e 30 Dicembre, per la prima volta in Basilicata, Grassano sarà il luogo nel quale si incontreranno professionisti, startupper, innovatori e ragazzi pieni di idee per il territorio.

@@ -5,7 +5,7 @@ category: programming
 tags: [swift, programming, apple, objective-c]
 ---
 
-![alt text](/post-imgs/2015-05-24-swift-intro-vars/swift.png)
+![Swift Logo](/post-imgs/2015-05-24-swift-intro-vars/swift.png){:class="img-responsive"}
 
 Swift è un linguaggio di programmazione presentato da Apple all'annuale conferenza per gli sviluppatori (WWDC) nel 2014. [Link](https://www.youtube.com/watch?v=MO7Ta0DvEWA)
 
@@ -89,7 +89,7 @@ Un ottimo punto di partenza sono i cosiddetti **Playground**
 
 Avvia Xcode e fai click su **Get started with a playground**
 
-![alt text](/post-imgs/2015-05-24-swift-intro-vars/playground.png)
+![Un Playground di XCode](/post-imgs/2015-05-24-swift-intro-vars/playground.png){:class="img-responsive"}
 
 I playground sono degli ambienti REPL (Read-Eval-Print-Loop) che permettono la prototipazione veloce delle applicazioni, un po' come avviene per linguaggi come Python o Ruby con le rispettive console.
 
