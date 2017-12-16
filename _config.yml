@@ -18,16 +18,15 @@ highlighter: rouge
 # Objects listed here will appear in the main nav menu.
 # Exceeding four items may cause problems on the desktop (>900px wide) layout.
 nav_menu:
-  - name: Posts
+  - name: Home
     url: /
     icon: /i/icons.svg#posts # icons should be 24x24 px.
   - name: Projects
     url: /projects
     icon: /i/icons.svg#portfolio
-  - name: GitHub
-    url: https://github.com/garamb1/
-    icon: /i/icons.svg#github
-    outbound: true      # this key sets a link to open in a new window.
+  - name: About
+    url: /about
+    icon: /i/icons.svg#about
   - name: Twitter
     url: https://twitter.com/garambo/
     icon: /i/icons.svg#twitter
