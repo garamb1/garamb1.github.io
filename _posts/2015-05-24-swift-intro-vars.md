@@ -180,7 +180,7 @@ var miaVar = 10
 Quando una variabile ha un valore, automaticamente assume il tipo del valore, in questo caso, numerico.
 
 ```swift
-println("Il tipo della variabile è: \(_stdlib_getDemangledTypeName(miaVar))")</code>
+println("Il tipo della variabile è: \(_stdlib_getDemangledTypeName(miaVar))")
 ```
 
 Con output:

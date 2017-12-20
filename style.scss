@@ -243,7 +243,8 @@
     margin: 2rem;
     right: 0;
     top: 0;
-    @include bgicon($image: url("{{ site.baseurl }}/i/icons.svg#hamburger"), $position: center, $color: transparent);
+    background-size: contain;
+    @include bgicon($image: url("{{ site.baseurl }}/i/menubutton.png"), $position: center, $color: transparent);
   }
 
   @include tablet-landscape-up {
