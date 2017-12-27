@@ -20,16 +20,20 @@ highlighter: rouge
 nav_menu:
   - name: Home
     url: /
-    icon: /i/icons.svg#posts # icons should be 24x24 px.
+    icon: /i/icons/posts.svg # icons should be 24x24 px.
+    icon-white: /i/icons/posts_white.svg
   - name: Projects
     url: /projects
-    icon: /i/icons.svg#portfolio
+    icon: /i/icons/portfolio.svg
+    icon-white: /i/icons/portfolio_white.svg
   - name: About
     url: /about
-    icon: /i/icons.svg#about
+    icon: /i/icons/about.svg
+    icon-white: /i/icons/about_white.svg
   - name: Twitter
     url: https://twitter.com/garambo/
-    icon: /i/icons.svg#twitter
+    icon: /i/icons/twitter.svg
+    icon-white: /i/icons/twitter_white.svg
     outbound: true      # this key sets a link to open in a new window.
 
 # Objects listed here will appear on the /projects.html page.
