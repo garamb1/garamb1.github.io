@@ -22,7 +22,11 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
+    {% if page.title == 'Posts' %}
+    <title>{{ site.title }} | Vincenzo Garambone</title>
+    {% else %}
     <title>{{ page.title }} | {{ site.title }}</title>
+    {% endif %}
     <meta name="author"       content="{{ site.author }}" />
     <meta name="description"  content="{{ teaser }}" />
     <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico" />
