@@ -2,11 +2,11 @@
 # Theme Customization #
 #######################
 
-title: '@garambo'                              # used in <title> tag & site header
+title: '@garambo'                           # used in <title> tag & site header
 author: Vincenzo Garambone                  # used in a <meta> tag & /feed.xml
 description: >                              # used in a <meta> tag & /feed.xml
   Vincenzo Garambone's personal page & blog.
-  Thoughts and ideas about programming and random stuff (Mostly in Italian).
+  Thoughts about programming, music & video games.
 slogan: \> Hello.                           # used in site header, beside title
 avatar: /i/avatar.png                       # used as portrait in site header
 banner: /i/background.svg                   # used as background in site header
@@ -30,11 +30,11 @@ nav_menu:
     url: /about
     icon: /i/icons/about.svg
     icon-white: /i/icons/about_white.svg
-  - name: Twitter
-    url: https://twitter.com/garambo/
-    icon: /i/icons/twitter.svg
-    icon-white: /i/icons/twitter_white.svg
-    outbound: true      # this key sets a link to open in a new window.
+  #- name: Twitter
+  #  url: https://twitter.com/garambo/
+  #  icon: /i/icons/twitter.svg
+  #  icon-white: /i/icons/twitter_white.svg
+  #  outbound: true      # this key sets a link to open in a new window.
 
 # Objects listed here will appear on the /projects.html page.
 projects:
