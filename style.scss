@@ -233,7 +233,7 @@
     right: 0;
     width: 2.5rem;
     height: 1.3rem;
-    @include bgicon($image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAFCAQAAAD1NuQ2AAAAEklEQVQIW2O88p9hqANGUv0AABTnA6kS+8qPAAAAAElFTkSuQmCC"), $position: center, $color: #62639A);
+    @include bgicon($image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAFCAQAAAD1NuQ2AAAAEklEQVQIW2O88p9hqANGUv0AABTnA6kS+8qPAAAAAElFTkSuQmCC"), $position: center, $color: #222b36);
   }
 
   @include tablet-portrait-up {
@@ -343,7 +343,7 @@
 
     &:active, &:focus {
       color: #fff;
-      background-color: #62639A;
+      background-color: #222b36;
 
       {% for item in site.nav_menu %}
 	&.nav__item--{{ item.name | downcase }} { background-image: url("{{ item.icon-white }}"); }
@@ -360,7 +360,7 @@
     @include transition(padding-bottom, 0.25rem, 100ms);
     border: none;
 
-    &:hover { padding-bottom: 0.5rem; border-bottom: 0.25rem solid #62639A; }
+    &:hover { padding-bottom: 0.5rem; border-bottom: 0.25rem solid #222b36; }
     &:last-child { margin-right: 0; }
 
   }

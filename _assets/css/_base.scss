@@ -23,10 +23,10 @@ h4 { @include heading(1.2); }
 hr { display: none; }
 
 a {
-  color: #62639A; @include underline(#ddd);
+  color: #222b36; @include underline(#ddd);
   &:visited { @include underline(#fff); }
-  &:hover   { @include underline(#62639A); }
-  &:active  { @include highlight(#62639A) }
+  &:hover   { @include underline(#222b36); }
+  &:active  { @include highlight(#222b36) }
 }
 
 b, strong { @include fontweight(bold); }

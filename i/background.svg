@@ -4,26 +4,11 @@
 <style type="text/css">
 	.background {
 		fill:#C6C6C6;
-		animation: background-anim 3s;
 	}
 	
 	.illustration {
-		fill:#62639A;
+		fill:#222b36;
 		fill-opacity:0.1;
-		animation: illustration-anim 3s;
-	}
-
-	@keyframes	background-anim{
-		0% 		{fill:#C6C6C6;}
-		60%    	{fill:#CFCFCF}
-		100% 	{fill:#C6C6C6;}
-	}
-
-	@keyframes	illustration-anim{
-		0% 		{fill:#62639A; fill-opacity:0.1;}
-		60%    	{fill:#FFF; fill-opacity:0.5;}
-		80%    	{fill-opacity:0.1;}
-		100% 	{fill:#62639A}
 	}
 
 </style>
