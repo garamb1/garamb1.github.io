@@ -1,28 +1,29 @@
 ---
 title: "About Me"
-teaser: "@garambo is Vincenzo Garambone's personal page & blog: Thoughts and ideas about programming and random stuff (Mostly in Italian)."
+teaser: "@garambo is Vincenzo Garambone's personal page & blog"
 layout: single
 ---
-![Me & My Colleagues](/post-imgs/about/elis.jpg){:class="img-responsive"}
-<sub>Me & my colleagues showing off some cool stuff we built.</sub>
-
 ## Summary
 
 Hello there! Vincenzo here.
+I am a **Full-stack software engineer**, with a broad experience in professional software development and teaching. 
 
-As my [Linkedin](https://www.linkedin.com/in/vincenzo-garambone/) profile summary says, I am an experienced Software Engineer with a demonstrated history of working in the education/training industry. 
-Skilled in Android, HTML5, Software Analysis & Design, Java and Game Development using Unity3D.
+## Experience
 
-I currently work as Software Developer & Instructor at [Elis](http://www.elis.org), Rome.
-When I'm not at work, I usually try to to have a good read, listen to (and play) music, enjoy a movie or get into serious gaming.
+### Freelance, Italy, September 2023 - Today
+After my experience abroad, I decided to move back to Italy and enjoy the privilege of managing my time and work.
+Offering software engineering services and customised training.
 
-*Hope you enjoy this blog.*
+### Yahoo, Dublin, Ireland, January 2019 - July 2023
+Full stack developer on demand side ad platforms team for Yahoo! DSP. Worked on design and implementation of new and existing features across the full stack of the ad serving platform: this includes frontend UI features in our Ember based UI and ad serving features Java API and Ad Server. Collaborated within an agile team, focusing on design and implementation of features, automated testing and releases via CI/CD pipelines.
 
-## Social profiles
-* <i class="fa fa-twitter-square" aria-hidden="true"></i>
- [Twitter](https://twitter.com/garambo)
+### Elis, Rome, Italy, June 2013 - March 2018
+Conducted lectures on Java SE, Java EE, Software Analysis and Design, HTML5 and Android, developing customised courseware to meet career goals of both consumer and enterprise users. Advised assistant teachers for their career and technical progression and developed customised software solutions for both internal and external clients in the IT industry.
+
+## Where to find me
+* <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+ [Linkedin](https://www.linkedin.com/in/vincenzo-garambone/)
 * <i class="fa fa-github" aria-hidden="true"></i> [GitHub](https://github.com/garamb1)
-* <i class="fa fa-youtube-play" aria-hidden="true"></i> [YouTube](https://www.youtube.com/channel/UCAdUHAAJU0C6HlV0K5OTpmQ)
 * <i class="fa fa-spotify" aria-hidden="true"></i> [Spotify](https://open.spotify.com/user/garambo)
 
 ## Non-inspirational quote
