@@ -24,7 +24,6 @@ hr { display: none; }
 
 a {
   color: #222b36; @include underline(#ddd);
-  &:visited { @include underline(#fff); }
   &:hover   { @include underline(#222b36); }
   &:active  { @include highlight(#222b36) }
 }
