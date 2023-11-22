@@ -105,12 +105,11 @@
 
   @include mobile-only {
     font-size: 2.5rem;
-    color: #555;
+    color: #222b36;
   }
 
   @include tablet-portrait-up {
     margin: 0 0.5rem;
-    font-size: 1.5rem;
     font-weight: 700;
     text-transform: lowercase;
   }
@@ -121,8 +120,7 @@
   @include tablet-portrait-up {
     width: 100%;
     height: 0;
-    color: #fff;
-    text-shadow: 2px 2px #444;
+    color: #222b36;
     line-height: 0;
 
     > h1, > div:last-child {
@@ -134,28 +132,26 @@
       text-align: right;
       right: 50%;
       margin-right: 6.5rem;
-      font-size: 6.5vw;
+      font-size: 5vw;
       line-height: inherit;
     }
 
     > div:last-child {
       left: 50%;
       margin-left: 6.5rem;
-      font-size: 5.75vw;
+      font-size: 4vw;
     }
   }
 
   @include tablet-landscape-up {
-    > h1 { font-size: 3.625rem; }
+    > h1 { font-size: 2rem; }
 
-    > div:last-child { font-size: 3.25rem; }
+    > div:last-child { font-size: 2rem; }
   }
 }
 
 .nameplate__subhead{
-  @include mobile-only {
     color: #555;
-  }
 }
 
 .nameplate--home__avatar {
@@ -172,7 +168,7 @@
 
 .nameplate--destination {
   @include tablet-portrait-up {
-    color: #555;
+    color: inherit;
     float: left;
     margin: 0;
 
@@ -306,8 +302,6 @@
 	display: block;
 	padding: 1.5rem;
 	height: 3rem;
-	@include fontface(serif);
-	@include fontweight(bold, serif, #fff);
 	font-size: 2.5rem;
 	line-height: 3rem;
 	@include bgicon($image: url('/i/icons/close_white.svg'), $position: top 2.125rem right 2.375rem, $size: null, $color: #76767F);
@@ -353,8 +347,6 @@
 
   @include tablet-landscape-up {
     display: inline-block;
-    @include fontface(sans-serif);
-    @include fontweight(bold, sans-serif);
     text-transform: uppercase;
     padding: 0.5rem 1rem;
     @include transition(padding-bottom, 0.25rem, 100ms);
@@ -458,53 +450,38 @@
     position: relative;
     padding: 1rem;
     background-color: #fff;
-    border: 1px solid #76767F;
-    border-right-width: 1.5rem;
-    @include fontface(serif);
     color: #444;
     text-align: right;
   }
 }
 
-.posts__entry-date {
-  @include mobile-only {
-    font-style: italic;
-    float: left;
-    text-align: right;
-    width: 3.25rem;
-    line-height: 1.875rem;
-    margin-right: 0.5rem;
-    &::after { content: ' \00bb'; }
-  }
-
-  @include tablet-portrait-up {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-  }
-}
-
 .posts__entry-title {
+  a, a:hover {
+    border: none;
+    color: #222b36;
+  }
+  a:active {
+    color: #fff;
+    background-color: #222b36;
+  }
+
   @include mobile-only {
     font-size: 1.25rem;
     @include fontweight(bold);
     overflow: hidden;        // Keep titles
     text-overflow: ellipsis; // limited to
     white-space: nowrap;     // one line
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.2rem;
   }
 
   @include tablet-portrait-up {
     font-size: 2rem;
     font-weight: 700;
-    margin-top: 5rem;
-
-    a, a:hover {
-      border: none;
-      color: inherit
-    }
-    a:active {
-      color: #fff;
-    }
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
   }
 }
 .posts__entry-teaser {
@@ -512,31 +489,23 @@
 
   @include mobile-only { // override nowrap above
     white-space: normal;
-    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
   }
 
   @include tablet-portrait-up {
-    @include fontface(sans-serif);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 .posts__entry-category {
-  @include mobile-only {
-    text-align: right;
-    margin: auto;
-    margin-top: 0.5rem;
-    padding-right: 1.75rem;
-    @include bgicon($image: url("{{ site.baseurl }}/i/icons/category_purple.svg"), $position: right 0.375rem center, $size: 1rem);
-    @include fontweight(bold, sans-serif, $button_category);
-  }
-
-  @include tablet-portrait-up {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    @include fontweight(bold, serif, inherit);
-  }
+  text-align: right;
+  margin: auto;
+  margin-top: 0.5rem;
+  padding-right: 1.75rem;
+  @include bgicon($image: url("{{ site.baseurl }}/i/icons/category_purple.svg"), $position: right 0.375rem center, $size: 1rem);
 }
 
 .projects { @extend .posts; }
@@ -546,13 +515,6 @@
 .projects__list { @extend .posts__list; }
 
 .projects__entry { @extend .posts__entry; }
-
-.projects__entry-role {
-  @extend .posts__entry-date;
-  @include mobile-only {
-    width: 5rem;
-  }
-}
 
 .projects__entry-title { @extend .posts__entry-title; }
 
@@ -652,6 +614,10 @@
 }
 
 .post__body {
+  p {
+    @include fontface(sans-serif-content);
+  }
+
   > p:last-of-type {
     &:after { // tombstone
       /*
@@ -715,6 +681,7 @@
 /* Mobile nameplate active style*/
 .nameplate:active > h1, .nameplate:active > .nameplate__subhead{
     color: #fff;
+    background-color: #222b36;
 }
 
 /* Mobile link default ontap highligh removal */
@@ -728,4 +695,73 @@ blockquote{
     border: 1px dotted #555;
     border-left: .5rem solid #555;
     background-color: #eee;
+}
+
+
+/* # 8) MacOS Classic Effect
+ ========================================= */
+.mac-os-window {
+  &__outer {
+    border: 1px solid #000000;
+  }
+
+  &__middle {
+    padding: 1px;
+    border: 1px solid #ffffff;
+    background-color: #CBCBCB;
+  }
+
+  &__inner {
+    padding: 1px;
+    border: 1px solid #999999;
+    background-color: #FFF;
+  }
+
+  &__title-bar {
+    margin: -2px;
+    padding: 0px 2px;
+    width: 100%;
+    height: 18px;
+    font-size: 12px;
+    line-height: 18px;
+    background-color: #CBCBCB;
+    border-bottom: 1px solid #999999;
+
+    &--outer {
+      position: relative;
     }
+
+    &--inner {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    h1 {
+      position: relative;
+      display: inline;
+      margin: 0;
+      padding: 0;
+      padding-left: 5px;
+      padding-right: 5px;
+      background-color: #CBCBCB;
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__grill {
+    position: absolute;
+    padding-top: 2px;
+    width: 100%;
+  }
+
+  &__grill-line {
+    position: relative;
+    height: 1px;
+    background-color: #777777;
+    border-top: 1px solid #FFFFFF;
+  }
+}
