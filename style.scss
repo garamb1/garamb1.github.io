@@ -614,9 +614,7 @@
 }
 
 .post__body {
-  p {
-    @include fontface(sans-serif-content);
-  }
+  @include fontface(sans-serif-content);
 
   > p:last-of-type {
     &:after { // tombstone
