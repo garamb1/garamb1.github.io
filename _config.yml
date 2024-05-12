@@ -46,7 +46,7 @@ projects:
     teaser: |
       Search and Browse the WWW like it's 1997. 
       RetroSearch is a Spring Web Application that presents very simple HTML pages which can be interpreted by old browsers.
-      Includes Web Search, News and Sports Results API support. Available on retrosearch.org or for self-host.
+      Includes Web Search, News and Sports Results API support. Available on <a href="http://retrosearch.org" target="_blank">retrosearch.org</a> or for self-host.
     url: https://github.com/garamb1/retrosearch
     role: Developer
     category: Web Development
@@ -55,7 +55,7 @@ projects:
     teaser: |
       An infinite runner set in Rome's neighborhood of CasalBruciato. 
       A quick prototype developed using the Unity engine, supports motion controls.
-      Momentarly not available on Google Play.
+      Available on Google Play.
     url: https://play.google.com/store/apps/details?id=it.garambo.Casalbruciato
     role: Developer
     category: Game Development
