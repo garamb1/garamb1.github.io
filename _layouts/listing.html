@@ -50,7 +50,7 @@ layout: default
                           {{ item.date | date: "%-d %b %Y" }}
                         </time></h1>
                       {% elsif item_type == 'projects' %}
-                      <h1>Role:{{ item.role }}</h1>
+                      <h1>Project Info: {{ item.title }}</h1>
                       {% endif %}
                     </div>
                   </div>
@@ -59,18 +59,21 @@ layout: default
               {% if item.category %} 
               <div class="{{ item_type }}__entry-category {{ item_type }}__entry-category--{{ page_type }}">
                 {{ item.category }}
-              </div> 
+              </div>
               {% endif %}
-              
-              <div class="{{ item_type }}__entry-title {{ item_type }}__entry-title--{{ page_type }}"><a
+              <div class="{{ item_type }}__entry-container {{ item_type }}__entry-title--{{ page_type }}">
+                {% if item_type == 'projects' %} 
+                  <img src="{{ item.image }}" alt="{{ item.title }} Logo" class="{{ item_type }}-img">
+                {% endif %} 
+                
+                <div class="{{ item_type }}__entry-title {{ item_type }}__entry-title--{{ page_type }}"><a
                   href="{{ site.baseurl }}{{ item.url }}" {{ outbound_link_flag }}>{{ item.title }}</a>
                 {% if item.teaser %} 
                 <div class="{{ item_type }}__entry-teaser {{ item_type }}__entry-teaser--{{ page_type }}">
                   {{ item.teaser }}
-                </div>
                 {% endif %}
               </div>
-
+              </div>
             </div>
           </div>
         </div>
