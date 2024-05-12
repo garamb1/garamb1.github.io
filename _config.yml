@@ -33,24 +33,39 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
+  - title: NetTuner
+    teaser: |
+      Internet radio streaming and management in your macOS menu bar.
+      Audio streaming using Apple AVPlayer, SwiftData for storage.
+
+    url: https://github.com/garamb1/NetTuner
+    role: Developer
+    category: macOS App
+    image: /project-imgs/NetTunerIcon.png
   - title: RetroSearch
     teaser: |
       Search and Browse the WWW like it's 1997. 
       RetroSearch is a Spring Web Application that presents very simple HTML pages which can be interpreted by old browsers.
-      It provides the ability to search the Web using DuckDuckGo with a custom scraper that loads the first page of results and allows you to browse pages in plain text
+      Includes Web Search, News and Sports Results API support. Available on retrosearch.org or for self-host.
     url: https://github.com/garamb1/retrosearch
     role: Developer
     category: Web Development
+    image: /project-imgs/RetroSearchIcon.png
   - title: Casalbruciato Runner
-    teaser: An infinite runner set in Rome's neighborhood of CasalBruciato. Available on Google Play.
+    teaser: |
+      An infinite runner set in Rome's neighborhood of CasalBruciato. 
+      A quick prototype developed using the Unity engine, supports motion controls.
+      Momentarly not available on Google Play.
     url: https://play.google.com/store/apps/details?id=it.garambo.Casalbruciato
     role: Developer
     category: Game Development
+    image: /project-imgs/CasalBruciatoIcon.png
   - title: StartSaver
     teaser: With StartSaver you can lock the screen or start your screensaver when you are getting away from your Mac.
     url: https://github.com/garamb1/StartSaver/releases
     role: Developer
     category: macOS App
+    image: /project-imgs/StartSaverIcon.png
 
 #################
 # Site Settings #

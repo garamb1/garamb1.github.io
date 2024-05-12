@@ -520,6 +520,16 @@
 
 .projects__entry-teaser { @extend .posts__entry-teaser; }
 
+.projects__entry-container {
+  display: flex;
+  align-items: normal;
+
+  > img {
+    width: 140px;
+    padding: 5px;
+  }
+}
+
 .projects__entry-category { @extend .posts__entry-category; }
 
 .paginator {
