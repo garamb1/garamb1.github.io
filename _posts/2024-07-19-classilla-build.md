@@ -12,7 +12,7 @@ image: /post-imgs/2024-07-19-classilla-build/screenshot.png
 
 Browsing the modern Internet with old computers can be painful, but there is no shortage of awesome projects to achieve what would be considered impossible.
 
-[Cameron Kaiser](https://www.floodgap.com) and contributors have been working on [Classilla](https://www.floodgap.com/software/classilla/), an updated release of Mozilla for Mac OS 8.6 and 9 from 2009 to 2021. Classilla is provided under the Mozilla Public License.
+[Cameron Kaiser](https://www.floodgap.com) and contributors have been working on [Classilla](https://www.floodgap.com/software/classilla/), an updated release of Mozilla for Mac OS 8.6 and 9, from 2009 to 2021. Classilla is provided under the Mozilla Public License.
 
 ## Context
 
