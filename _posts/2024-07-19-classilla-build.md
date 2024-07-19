@@ -14,11 +14,11 @@ Browsing the modern Internet with old computers can be painful, but there is no 
 
 [Cameron Kaiser](https://www.floodgap.com) and contributors have been working on [Classilla](https://www.floodgap.com/software/classilla/), an updated release of Mozilla for Mac OS 8.6 and 9 from 2009 to 2021. Classilla is provided under the Mozilla Public License.
 
-## On building from source
+## Context
 
-Recently, a [discussion](https://system7today.com/forums/index.php?topic=3829.0) on the amazing System 7 Today Forum was started by lauland, discussing the possibility of building it from source and possibly continue development, so I decided to give it a try on Mac OS X.
+Recently, a [discussion](https://system7today.com/forums/index.php?topic=3829.0) on the amazing System 7 Today Forum was started by lauland, regarding the possibility of building it from source and possibly continue development, so I decided to give it a try on Mac OS X.
 
-Picking up the excellent work started by lauland, I managed to build on OS X.
+Picking up the excellent work started by lauland, I managed to build Classilla on OS X, and here's how to do it.
 
 ## What you'll need
 
