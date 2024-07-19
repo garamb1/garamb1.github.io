@@ -43,66 +43,66 @@ Picking up the excellent work started by lauland, I managed to build Classilla o
 
 Create an alias of `CodeWarrior MPW/MPW/Tools`, rename it to `(ToolServer Tools)` and copy and replace it with the folder in the CodeWarrior folder (usually `/Applications/Metrowerks CodeWarrior 7.0/MetroWerks CodeWarrior`)
 
-![Configuration: ToolServer Alias](/post-imgs/2024-07-19-classilla-build/classilla-1.png){:class="img-responsive"}
+![Configuration: ToolServer Alias](/post-imgs/2024-07-19-classilla-build/classilla-1.png){:class="img-responsive image-zoom"}
 
 
 In the CodeWarrior Folder, select the IDE Application and force it to run in Classic.
 
-![Use Classic to run CodeWarrior](/post-imgs/2024-07-19-classilla-build/classilla-2.png){:class="img-responsive"}
+![Use Classic to run CodeWarrior](/post-imgs/2024-07-19-classilla-build/classilla-2.png){:class="img-responsive image-zoom"}
 
 Start CodeWarrior, verify in the Preferences the ToolServer menu is enabled.
 
-![Verify the ToolServer menu is enabled](/post-imgs/2024-07-19-classilla-build/classilla-3.png){:class="img-responsive"}
+![Verify the ToolServer menu is enabled](/post-imgs/2024-07-19-classilla-build/classilla-3.png){:class="img-responsive image-zoom"}
 
 
 You can now quit CodeWarrior and complete the last two steps!
 
 Copy the `RunTSScript` plugin from Classilla's source: `mozilla/build/mac/RunTSScript` goes into `/Applications/Metrowerks CodeWarrior 7.0/MetroWerks CodeWarrior/CodeWarrior Plugins/Compilers`.
 
-![RunTSScript plugin](/post-imgs/2024-07-19-classilla-build/classilla-4.png){:class="img-responsive"}
+![RunTSScript plugin](/post-imgs/2024-07-19-classilla-build/classilla-4.png){:class="img-responsive image-zoom"}
 
 Copy the `MacOS Support` folder from lauland's archive http://macintoshgarden.org/sites/macintoshgarden.org/files/apps/MacOS_Support_with_addons.sit into the CodeWarrior installation path (`/Applications/Metrowerks CodeWarrior 7.0/MetroWerks CodeWarrior/`) and overwrite its contents.
 
-![MacOS Support](/post-imgs/2024-07-19-classilla-build/classilla-5.png){:class="img-responsive"}
+![MacOS Support](/post-imgs/2024-07-19-classilla-build/classilla-5.png){:class="img-responsive image-zoom"}
 
 ## MacPerl
 
 The MacPerl package from lauland is mostly ready, just un-stuff it.
 Verify the `site_perl` folder is set as search path in MacPerl's Preferences window.
 
-![MacPerl Preferences](/post-imgs/2024-07-19-classilla-build/classilla-6.png){:class="img-responsive"}
+![MacPerl Preferences](/post-imgs/2024-07-19-classilla-build/classilla-6.png){:class="img-responsive image-zoom"}
 
 From the Classilla source folder, copy the `Mozilla build prefs` folder into your Classic environment's `System Folder/Preferences`
 
-![Moz folder into site_perl](/post-imgs/2024-07-19-classilla-build/classilla-7.png){:class="img-responsive"}
+![Moz folder into site_perl](/post-imgs/2024-07-19-classilla-build/classilla-7.png){:class="img-responsive image-zoom"}
 
 
 From the Classilla source folder, copy the `Moz` folder (`mozilla/build/mac/build_scripts`) there into `site_perl`
 
-![Moz folder into site_perl](/post-imgs/2024-07-19-classilla-build/classilla-8.png){:class="img-responsive"}
+![Moz folder into site_perl](/post-imgs/2024-07-19-classilla-build/classilla-8.png){:class="img-responsive image-zoom"}
 
 Now, you're ready to run the first Perl Script!
 Simply drag the `ClassillaFixAliases.pl` script on the MacPerl icon on the dock (or open in as you please using MacPerl). You will be asked to locate the Classilla source code folder (named `mozilla`) by picking a file in it.
 
-![ClassillaFixAliases.pl](/post-imgs/2024-07-19-classilla-build/classilla-9.png){:class="img-responsive"}
+![ClassillaFixAliases.pl](/post-imgs/2024-07-19-classilla-build/classilla-9.png){:class="img-responsive image-zoom"}
 
 With the correct folder chosen, the script will run and complete in a couple of minutes (depending on your machine).
 
-![ClassillaFixAliases.pl running](/post-imgs/2024-07-19-classilla-build/classilla-10.png){:class="img-responsive"}
+![ClassillaFixAliases.pl running](/post-imgs/2024-07-19-classilla-build/classilla-10.png){:class="img-responsive image-zoom"}
 
 ## The fun part: building!
 
 Everything is mostly ready. The main build script, `BuildMozilla.pl` is located in the Classilla Source folder under `mozilla/build/mac/build_scripts`.
 
-![BuildMozilla.pl ](/post-imgs/2024-07-19-classilla-build/classilla-11.png){:class="img-responsive"}
+![BuildMozilla.pl ](/post-imgs/2024-07-19-classilla-build/classilla-11.png){:class="img-responsive image-zoom"}
 
 Simply drag the `BuildMozilla.pl` script on the MacPerl icon on the dock. You will be asked to locate your CodeWarrior IDE application. Use the Picker to locate it, in my case inside the `/Applications/Metrowerks CodeWarrior 7.0/MetroWerks CodeWarrior/` folder.
 
-![BuildMozilla.pl ](/post-imgs/2024-07-19-classilla-build/classilla-12.png){:class="img-responsive"}
+![BuildMozilla.pl ](/post-imgs/2024-07-19-classilla-build/classilla-12.png){:class="img-responsive image-zoom"}
 
 The original build script relies on a MacCVS session to pull the latest changes:
 
-![Requesting a MacCVS session ](/post-imgs/2024-07-19-classilla-build/classilla-13.png){:class="img-responsive"}
+![Requesting a MacCVS session ](/post-imgs/2024-07-19-classilla-build/classilla-13.png){:class="img-responsive image-zoom"}
 
 The pull is done as part of the build action in the RunBuild subroutine (called by BuildMozilla.pl):
 
@@ -121,7 +121,7 @@ File 'Macintosh HD:Applications (Mac OS 9):MacPerl ƒ:site_perl:Moz:BuildCore.pm
 
 To solve the issue, using MacCVS Pro, create a new Session file: in this example, I created a Session named `Classilla Session` on my Desktop folder.
 
-![Creating a MacCVS session ](/post-imgs/2024-07-19-classilla-build/classilla-14.png){:class="img-responsive"}
+![Creating a MacCVS session ](/post-imgs/2024-07-19-classilla-build/classilla-14.png){:class="img-responsive image-zoom"}
 
 Pick the newly create Session file and the build will continue.
 
@@ -131,20 +131,20 @@ But wait! There might be something more!
 #OS error -609 (Error message file not available)
 File 'Macintosh HU:Users:garambo:Desktop:MacPerl fisite_perl:Moz:MacCvS.pm; Line 97
 ```
-![MacPerl complaining the MacCvs.pm file is not available](/post-imgs/2024-07-19-classilla-build/classilla-15.png){:class="img-responsive"}
+![MacPerl complaining the MacCvs.pm file is not available](/post-imgs/2024-07-19-classilla-build/classilla-15.png){:class="img-responsive image-zoom"}
 
 
 We will need to add the `site_perl/Moz` path to MacPerl's Environment variabiles: in order to that, open MacPerl's Preferences window, select the Environment tab and add a new variable named `SEARCH` pointing to the `Moz` directory we copied earlier.
 
-![MacPerl new environment variable](/post-imgs/2024-07-19-classilla-build/classilla-16.png){:class="img-responsive"}
+![MacPerl new environment variable](/post-imgs/2024-07-19-classilla-build/classilla-16.png){:class="img-responsive image-zoom"}
 
 Restart the build by dragging the `BuildMozilla.pl` script on the MacPerl icon on the dock. The script will move past the previously failed step.
 
-![Build running](/post-imgs/2024-07-19-classilla-build/classilla-17.png){:class="img-responsive"}
+![Build running](/post-imgs/2024-07-19-classilla-build/classilla-17.png){:class="img-responsive image-zoom"}
 
 Once the first step (the Manifest stage) is complete, the build script will move to the compilation of the `xpidl tools`, if everything was correctly configured, CodeWarrior will start.
 
-![Build running in CodeWarrior](/post-imgs/2024-07-19-classilla-build/classilla-18.png){:class="img-responsive"}
+![Build running in CodeWarrior](/post-imgs/2024-07-19-classilla-build/classilla-18.png){:class="img-responsive image-zoom"}
 
 As mentioned in the original build instructions, if this is the first time running a build, this step will likely fail:
 ```
@@ -169,7 +169,7 @@ Build complete
 ```
 
 
-![Build running](/post-imgs/2024-07-19-classilla-build/classilla-19.png){:class="img-responsive"}
+![Build running](/post-imgs/2024-07-19-classilla-build/classilla-19.png){:class="img-responsive image-zoom"}
 
 You will find your build in `mozilla/dist/viewer`.
 
