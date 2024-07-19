@@ -3,7 +3,7 @@ title: "Building Classilla on Mac OS X"
 teaser: "A step-by-step guide to get started with Classilla development on Mac OS X."
 category: programming
 tags: [english, programming, retro]
-image: /post-imgs/2024-07-19-classilla-build/screenshot.png
+image: /post-imgs/2024-07-19-classilla-build/classilla.gif
 ---
 
 ## What is Classilla
@@ -138,11 +138,11 @@ We will need to add the `site_perl/Moz` path to MacPerl's Environment variabiles
 
 ![MacPerl new environment variable](/post-imgs/2024-07-19-classilla-build/classilla-16.png){:class="img-responsive"}
 
-Restart the build by dragging the `BuildMozilla.pl` script on the MacPerl icon on the dock. The script will move past the previous failed step.
+Restart the build by dragging the `BuildMozilla.pl` script on the MacPerl icon on the dock. The script will move past the previously failed step.
 
 ![Build running](/post-imgs/2024-07-19-classilla-build/classilla-17.png){:class="img-responsive"}
 
-Once the first step (the Manifest stage) is complete, the script will move to the compilation of the `xpidl tools`, if everything was correctly configured, CodeWarrior will start.
+Once the first step (the Manifest stage) is complete, the build script will move to the compilation of the `xpidl tools`, if everything was correctly configured, CodeWarrior will start.
 
 ![Build running in CodeWarrior](/post-imgs/2024-07-19-classilla-build/classilla-18.png){:class="img-responsive"}
 
