@@ -16,7 +16,7 @@ Browsing the modern Internet with old computers can be painful, but there is no 
 
 ## Context
 
-Recently, a [discussion](https://system7today.com/forums/index.php?topic=3829.0) on the amazing System 7 Today Forum was started by lauland, regarding the possibility of building it from source and possibly continue development, so I decided to give it a try on Mac OS X.
+Recently, a discussion on the amazing System 7 Today Forum was started by lauland, regarding the possibility of [building firefox/mozilla/etc from source](https://system7today.com/forums/index.php?topic=3829.0) and possibly continue development, so I decided to give it a try on Mac OS X.
 
 Picking up the excellent work started by lauland, I managed to build Classilla on OS X, and here's how to do it.
 
