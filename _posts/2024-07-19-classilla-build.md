@@ -24,7 +24,7 @@ Picking up the excellent work started by lauland, I managed to build Classilla o
 
  - A PowerPC Mac running Mac OS X 10.4.11
  - A working Classic Environment
- - Classilla ([Macintosh Garden Page](macintoshgarden.org/apps/classilla)):
+ - Classilla ([Macintosh Garden Page](http://macintoshgarden.org/apps/classilla)):
     - Source code, Download #3
     - Lauland's MacOS Support (Download #7) and MacPerl with mods (Download #8)
  - CodeWarrior Pro 7.1 ([Macintosh Garden Page](http://macintoshgarden.org/apps/codewarrior-pro-71)):
