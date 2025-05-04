@@ -33,6 +33,15 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
+  - title: Mobile Soundscape
+    teaser: |
+      Build the perfect soundscape to study, relax or work to.
+      No ads, no tracking. Compatible with Control Center and AirPlay.
+      <a href="/mobile-soundscape-privacy" target="_blank">Privacy Policy</a>
+    url: 
+    role: Developer
+    category: iOS App
+    image: /project-imgs/MobileSoundscapeIcon.png
   - title: NetTuner
     teaser: |
       Internet radio streaming and management in your macOS menu bar.
