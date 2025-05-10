@@ -6,19 +6,21 @@ layout: single
 ## Summary
 
 Hello there! Vincenzo here.
-I am a **Full-stack software engineer**, with a broad experience in professional software development and teaching. 
+I am a **Full-stack software engineer**, sometimes I teach too.
 
 ## Experience
 
-### Freelance, Italy, September 2023 - Today
-After my experience abroad, I decided to move back to Italy and enjoy the privilege of managing my time and work.
-Offering software engineering services and customised training.
+### Mollie, Milan Italy, December 2024 - Today
+New city, new job. Making payments and money management effortless for every business in Europe.
+
+### Freelance, Italy, September 2023 - September 2024
+After my experience abroad, I decided to move back to Italy and offer software engineering services and customised training.
 
 ### Yahoo, Dublin, Ireland, January 2019 - July 2023
-Full stack developer on demand side ad platforms team for Yahoo! DSP. Worked on design and implementation of new and existing features across the full stack of the ad serving platform: this includes frontend UI features in our Ember based UI and ad serving features Java API and Ad Server. Collaborated within an agile team, focusing on design and implementation of features, automated testing and releases via CI/CD pipelines.
+Full stack developer on demand side ad platforms team for Yahoo! DSP. Worked on design and implementation of new and existing features across the full stack of the ad serving platform.
 
 ### Elis, Rome, Italy, June 2013 - March 2018
-Conducted lectures on Java SE, Java EE, Software Analysis and Design, HTML5 and Android, developing customised courseware to meet career goals of both consumer and enterprise users. Advised assistant teachers for their career and technical progression and developed customised software solutions for both internal and external clients in the IT industry.
+Conducted lectures on Java SE, Java EE, Software Analysis and Design, HTML5 and Android, developing customised courseware to meet career goals of both consumer and enterprise users.
 
 ## Where to find me
 * <i class="fa fa-linkedin-square" aria-hidden="true"></i>
