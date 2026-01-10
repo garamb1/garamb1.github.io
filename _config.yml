@@ -33,6 +33,14 @@ nav_menu:
 
 # Objects listed here will appear on the /projects.html page.
 projects:
+  - title: Connections
+    teaser: |
+      You're Pippo, a teeny tiny robot that wouldn't get far without their connections.
+      A submission to <a href="https://itch.io/jam/thatgamejam01" target="_blank">thatgamejam01</a>
+    url: https://garambo.itch.io/connections
+    role: Developer
+    category: Game Development
+    image: /project-imgs/ConnectionsIcon.png
   - title: Mobile Soundscape
     teaser: |
       Build the perfect soundscape to study, relax or work to.
@@ -46,7 +54,6 @@ projects:
     teaser: |
       Internet radio streaming and management in your macOS menu bar.
       Audio streaming using Apple AVPlayer, SwiftData for storage.
-
     url: https://github.com/garamb1/NetTuner
     role: Developer
     category: macOS App
